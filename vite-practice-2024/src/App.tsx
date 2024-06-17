@@ -3,11 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+// custom components
+import WebAppBar from './components/AppNav'
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <WebAppBar userType="1" />
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
